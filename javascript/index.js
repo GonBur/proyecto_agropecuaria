@@ -9,4 +9,10 @@ function mostrar_menu (){
     nav.classList.toggle("mostrarMenu");
 }
 
-boton.addEventListener("click", mostrar_menu)
+
+
+if (boton == true) {
+    boton.addEventListener("click", mostrar_menu)
+} else {
+    boton.addEventListener("click", mostrar_menu)
+}
