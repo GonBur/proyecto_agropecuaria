@@ -51,6 +51,7 @@ section h2{
 
 /* boton dentro de la sesion - section >boton */
 section button {
+    text-align: start;
     border: none;
     background-color: transparent;
 }
@@ -63,7 +64,7 @@ section button {
 /* menu de navegacion */
 /* mostrar menu */
 .mostrarMenu{
-    left: 0;
+    left: 100%;
     transition: 1s;
 }
 nav{
@@ -73,7 +74,7 @@ nav{
     width: 100%;
     height: 76vh;
     border-top: .2rem solid black;
-    left: 100%;
+    left: 0%;
     transition: all 1s;
 }
 nav ul li{
