@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sistema de Agropecuaria</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
 </head>
 <body>
     <!-- CABECERA - HEADER -->
@@ -16,7 +19,7 @@
 
         <!-- titulo - h1 -->
         <h1>
-            gINSTITUTO DE EDUCACIÓN SUPERIOR
+            INSTITUTO DE EDUCACIÓN SUPERIOR
             TECNOLÓGICO PÚBLICO "SULLANA"
         </h1>
 
@@ -29,8 +32,22 @@
         <!-- nombre - h2 -->
         <h2>Sistema de Agropecuaria</h2>
 
+        <!-- button - boton de navegacion -->
+        <button id="boton">
+            <span class="material-symbols-outlined" id="boton">
+                menu
+            </span>
+        </button>
         <!-- menu de navegacion - nav -->
-        <nav></nav>
+        <nav id="nav" class="mostrarMenu">
+            <ul>
+                <li><a href="#">INICIO</a></li>
+                <li><a href="#">REGISTRAR DATOS DE ANIMALES - CULTIVO</a></li>
+                <li><a href="#">ATENCIÓN</a></li>
+                <li><a href="#">CONSULTA</a></li>
+                <li><a href="#">ACTUALIZAR DATOS</a></li>
+            </ul>
+        </nav>
     </section>
 
     <!-- CONTENIDO PRINCIPAL -MAIN -->
@@ -41,11 +58,14 @@
 
         <!-- imagen al acceder al sistema - figure >img -->
         <figure>
-            <img src="" alt="">
+            <img src="img/principal_sistema.jpeg" alt="imagen referencial del cultivo ">
         </figure>
 
         <!-- texto adicional en el body(main) - p -->
         <p>Este sistema te ayudara con el registro de Datos tanto para los animales como para el cultivo  </p>
     </main>
+
+    <!-- enlazando el javascrip al html -->
+    <script src="javascript/index.js"></script>
 </body>
 </html>
