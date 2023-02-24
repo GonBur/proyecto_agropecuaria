@@ -22,12 +22,12 @@ body{
 header{
     background: #F5FFFA;
     display: grid;
-    grid-template-columns: 30% 60%;
+    grid-template-columns: 30% 65%;
     border-bottom: .2rem solid #2D293C;
 }
 /* el titulo dentro de la cabecera - header h1 */
 header h1{
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     font-family: 'Inter';
     text-align: center;
     margin: auto;
