@@ -24,6 +24,7 @@ header{
     display: grid;
     grid-template-columns: 30% 65%;
     border-bottom: .2rem solid #2D293C;
+    grid-template-rows: 15vh;
 }
 /* el titulo dentro de la cabecera - header h1 */
 header h1{
@@ -34,7 +35,18 @@ header h1{
     color: black;
 }
 
-
+/* la imagen dentro de la figura de la cabecera - header >figure > img */
+header figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header figure img{
+    width: calc(100% - 18%);
+    height: calc(100% - 10%);
+}
 /* SECCION NOMBRE Y MENU DE NAVEGACION - SECTION */
 section{
     /* background-color: blue; */
