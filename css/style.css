@@ -24,7 +24,7 @@ header{
     display: grid;
     grid-template-columns: 30% 65%;
     border-bottom: .2rem solid #2D293C;
-    grid-template-rows: 15vh;
+    grid-template-rows: calc(15vh - .2rem);
 }
 /* el titulo dentro de la cabecera - header h1 */
 header h1{
@@ -41,7 +41,7 @@ header figure{
     height: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: end;
 }
 header figure img{
     width: calc(100% - 18%);
