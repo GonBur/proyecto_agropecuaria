@@ -10,6 +10,4 @@ function mostrar_menu (){
 }
 
 
-
-
-    boton.addEventListener("click", mostrar_menu)
+boton.addEventListener("click", mostrar_menu)

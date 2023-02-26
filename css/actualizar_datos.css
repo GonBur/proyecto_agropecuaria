@@ -20,6 +20,7 @@ body{
 
 /* CABECERA - HEADER */
 header{
+    height: 15vh;
     background: #F5FFFA;
     display: grid;
     grid-template-columns: 30% 65%;
@@ -50,16 +51,19 @@ header figure img{
 }
 /* SECCION NOMBRE Y MENU DE NAVEGACION - SECTION */
 section{
+    height: 10vh;
     display: grid;
     grid-template-columns: 85% 15%;
     position: relative;
-    height: 10vh;
 }
 /* el subtitulo dentro de la sesion - section >h2 */
 section h2{
     font-size: 2.3rem;
     text-align: center;
     margin: auto;
+    color: #4AA49C;
+    font-family: 'Imprima';
+    text-shadow: .1rem 0rem  black;
 }
 
 /* boton dentro de la sesion - section >boton */
@@ -70,7 +74,7 @@ section button {
 }
 /* boton hamburguesa */ 
 #boton {
-    font-size: 4rem;
+    font-size: 4.5rem;
 }
 
 /* menu de navegacion */
@@ -94,7 +98,7 @@ nav ul li{
     margin: calc(75vh - 69vh) 13%;
     text-align: center;
 }
-nav ul li a{   
+nav ul li a{
     font-size: 2rem;
     text-shadow: .5rem .1rem 0 #fff;
     color: black;
@@ -114,15 +118,7 @@ nav ul li a:hover{
 main{
     height: 70vh;
 }
-/* el subtitulo del subtitulo dentro del contenido principal - main >h3 */
-main h3{
-    font-size: 2.5rem;
-    text-align: center;
-    margin-top: 3%;
-    color: #4AA49C;
-    font-family: 'Imprima';
-    text-shadow: .1rem 0rem  black;
-}
+
 
 
 /* PIE DE PAGINA - FOOTER */
@@ -143,6 +139,9 @@ footer p{
     
     
     /* CABECERA - HEADER */
+    header{
+        height: 15vh;
+    }
     /* el titulo dentro de la cabecera - header h1 */
     header h1{
         font-size: 3.2rem;
@@ -152,10 +151,12 @@ footer p{
     header figure img{
         width: calc(100% - 25%);
         height: 90%;
-        margin: 0;
     }
 
     /* SECCION NOMBRE Y MENU DE NAVEGACION - SECTION */
+    section{
+        height: 10vh;
+    }
     /* el subtitulo dentro de la sesion - section >h2 */
     section h2{
         font-size: 4.5rem;
@@ -169,19 +170,16 @@ footer p{
     nav ul li a{   
         font-size: 3.5rem;
     }
-    nav ul li a:hover{
-       box-shadow:  650px 0 #2D293C  inset,
-                    -650px 0 #327973 inset;
-        border-radius: 1.5rem;
-    }
     
     /* CONTENIDO PRINCIPAL - MAIN */
-    /* el subtitulo del subtitulo dentro del contenido principal - main >h3 */
-    main h3{
-        font-size: 3.5rem;
+    main{
+        height: 68vh;
     }
     
     /* PIE DE PAGINA - FOOTER */
+    footer{
+        height: 7vh;
+    }
     /* el parrafo dentro del pie de pagina - footer >p */
     footer p{
         margin: 0 2%;
@@ -189,7 +187,7 @@ footer p{
     }
 }
 
-/*  */
+/* MODO ESCRITORIO - PC */
 @media (min-width: 1023px) {
     body{
         grid-template-rows: 15% 10% 68% 7%;
@@ -197,6 +195,9 @@ footer p{
     
     
     /* CABECERA - HEADER */
+    header{
+        height: 15vh;
+    }
     /* el titulo dentro de la cabecera - header h1 */
     header h1{
         font-size:4.5rem;
@@ -210,68 +211,57 @@ footer p{
     }
 
     /* SECCION NOMBRE Y MENU DE NAVEGACION - SECTION */
+    section{
+        height: 10vh;
+    }
     /* el subtitulo dentro de la sesion - section >h2 */
     section h2{
-        top: 17vh;
+        top: 13vh;
         position: absolute;
-        left: 15%;
+        left: 40%;
         font-size: 5rem;
     }
     
     /* boton dentro de la sesion - section >boton */
-section button {
+    section button {
     display: none; 
-}
+    }
 
 
 /* menu de navegacion */
 /* mostrar menu */
-.mostrarMenu{
+    .mostrarMenu{
     left: 0%;
-}
-nav{
+    }
+    nav{
     position: absolute;
     top: -1%;
     width: 100%;
     height: 10vh;
     border-top: none;
-}
-nav ul{
+    }
+    nav ul{
     margin: 2% auto;
-}
-nav ul li{
+    }
+    nav ul li{
     margin: 0 1.4%;
     display: inline;
     text-align: center;
-}
-nav ul li a{   
-    border-radius: 1rem;
+    }
+    nav ul li a{   
     font-size: 3rem;
     padding: 1%;
-}
-nav ul li a:hover{
+    }
+    nav ul li a:hover{
     border-radius: 1rem;
     padding: .7% 1%;
-}
+    }
     
     /* CONTENIDO PRINCIPAL - MAIN */
     main{
-        display: grid;
-        height: 100%;
-        grid-template-columns: 55% 45%;
-        grid-template-rows: 25% 50%;
-        grid-template-areas: 
-        "bienvenidad bienvenidad"
-        "imagen parrafo";
+
     }
-    /* el subtitulo del subtitulo dentro del contenido principal - main >h3 */
-    main h3{
-        grid-area: bienvenidad;
-        width: 50%;
-        margin-left: 50%;
-        font-size: 3.5rem;
-    }
-    
+
     
     /* PIE DE PAGINA - FOOTER */
     /* el parrafo dentro del pie de pagina - footer >p */

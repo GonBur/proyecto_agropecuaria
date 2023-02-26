@@ -13,13 +13,15 @@ body{
     min-height: 100%;
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 15% 10% 70% 5%;
+    grid-template-rows: 15% 15% 65% 5%;
     overflow: hidden;
 }
 
 
 /* CABECERA - HEADER */
 header{
+    height: 15vh;
+    position:static;
     background: #F5FFFA;
     display: grid;
     grid-template-columns: 30% 65%;
@@ -43,29 +45,38 @@ header figure{
 }
 header figure img{
     background-size: contain;
+    
     width: calc(100% - 18%);
     height: 95%;
     margin: 2.5% 0;
 }
-
 /* SECCION NOMBRE Y MENU DE NAVEGACION - SECTION */
 section{
-    width: 90%;
-    height: 10vh;
-    text-align: end;
+    display: grid;
+    grid-template-columns: 80% 20%;
+    position: relative;
+    height: 15vh;
+}
+/* el subtitulo dentro de la sesion - section >h2 */
+section h2{
+    font-size: 2.3rem;
+    text-align: center;
     margin: auto;
+    color: #4AA49C;
+    font-family: 'Imprima';
+    text-shadow: .1rem 0rem  black;
 }
 
 /* boton dentro de la sesion - section >boton */
 section button {
-    margin-top: 3%;
+    text-align: start;
     border: none;
     background-color: transparent;
-    
 }
 /* boton hamburguesa */ 
 #boton {
-    font-size: 5rem;
+    margin-top: calc(15vh - 14vh);
+    font-size: 4.5rem;
 }
 
 /* menu de navegacion */
@@ -73,21 +84,20 @@ section button {
 .mostrarMenu{
     left: 100%;
     transition: 1s;
-    
 }
-nav{z-index: -1;
+nav{
     position: absolute;
-    top: 15%;
+    top: 90%;
     background-color:  #DDFFEE;
     width: 100%;
-    height: 100%;
+    height: 76vh;
     border-top: .2rem solid black;
     left: 0%;
     transition: all 1s;
 }
 nav ul li{
     list-style: none;
-    margin: calc(75vh - 65vh) 13%;
+    margin: calc(75vh - 70vh) 13%;
     text-align: center;
 }
 nav ul li a{   
@@ -108,17 +118,7 @@ nav ul li a:hover{
 
 /* CONTENIDO PRINCIPAL - MAIN */
 main{
-    z-index: -2;
-    height: 70vh;
-}
-/* el subtitulo del subtitulo dentro del contenido principal - main >h3 */
-main h3{
-    font-size: 2.5rem;
-    text-align: center;
-    margin-top: 3%;
-    color: #4AA49C;
-    font-family: 'Imprima';
-    text-shadow: .1rem 0rem  black;
+    height: 65vh;
 }
 /* la figura dentro del contenido principal - main >figure */
 main figure{
@@ -142,7 +142,6 @@ main p{
 
 /* PIE DE PAGINA - FOOTER */
 footer{
-    z-index: -2;
     height: 5vh;
     text-align: justify;
 }
@@ -171,6 +170,11 @@ footer p{
         margin: 0;
     }
 
+    /* SECCION NOMBRE Y MENU DE NAVEGACION - SECTION */
+    /* el subtitulo dentro de la sesion - section >h2 */
+    section h2{
+        font-size: 4.5rem;
+    }
     
     /* boton hamburguesa */ 
     #boton {
@@ -187,10 +191,6 @@ footer p{
     }
     
     /* CONTENIDO PRINCIPAL - MAIN */
-    /* el subtitulo del subtitulo dentro del contenido principal - main >h3 */
-    main h3{
-        font-size: 3.5rem;
-    }
     /* la figura dentro del contenido principal - main >figure */
     main figure{
         margin: 5% auto;
@@ -232,42 +232,50 @@ footer p{
         margin: 0;
     }
 
-
+    /* SECCION NOMBRE Y MENU DE NAVEGACION - SECTION */
+    /* el subtitulo dentro de la sesion - section >h2 */
+    section h2{
+        top: 14vh;
+        position: absolute;
+        left: 40%;
+        font-size: 5rem;
+    }
+    
     /* boton dentro de la sesion - section >boton */
-    section button {
+section button {
     display: none; 
-    }
+}
 
 
-    /* menu de navegacion */
-    /* mostrar menu */
-    .mostrarMenu{
+/* menu de navegacion */
+/* mostrar menu */
+.mostrarMenu{
     left: 0%;
-    }
-    nav{
+}
+nav{
     position: absolute;
-    top: 15%;
+    top: -1%;
     width: 100%;
     height: 10vh;
     border-top: none;
-    }
-    nav ul{
+}
+nav ul{
     margin: 2% auto;
-    }
-    nav ul li{
+}
+nav ul li{
     margin: 0 1.4%;
     display: inline;
     text-align: center;
-    }
-    nav ul li a{   
+}
+nav ul li a{   
     border-radius: 1rem;
     font-size: 3rem;
     padding: 1%;
-    }
-    nav ul li a:hover{
+}
+nav ul li a:hover{
     border-radius: 1rem;
     padding: .7% 1%;
-    }
+}
     
     /* CONTENIDO PRINCIPAL - MAIN */
     main{
@@ -278,11 +286,6 @@ footer p{
         grid-template-areas: 
         "bienvenidad bienvenidad"
         "imagen parrafo";
-    }
-    /* el subtitulo del subtitulo dentro del contenido principal - main >h3 */
-    main h3{
-        grid-area: bienvenidad;
-        font-size: 3.5rem;
     }
     /* la figura dentro del contenido principal - main >figure */
 main figure{
