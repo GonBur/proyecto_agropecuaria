@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sistema de Agropecuaria</title>
-    <link rel="stylesheet" href="css/registrar_datos.css">
+    <link rel="stylesheet" href="css/regitrar_datos_cultivo.css">
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
 </head>
@@ -57,14 +57,14 @@
         <!-- enlaces para el registro tanto de animales como del cultivo -->
         <section class="botones_animales_cultivo">
 
-               <li> <a href="registrar_datos.html" class="estas_aqui">Animales</a></li>
+                <li> <a href="registrar_datos.html"  class="no_estas_aqui">Animales</a></li>
 
-                <li><a href="regitrar_datos_cultivo.html" class="no_estas_aqui">Cultivo</a></li>
+                <li><a href="regitrar_datos_cultivo.html" class="estas_aqui">Cultivo</a></li>
         </section>
 
         <!-- formulario para el registro de datos a ingresar -->
         <form action="">
-            <!-- codigo -->
+            <!-- Codigo del Cultivo -->
             <label for="codigo">CODIGO:</label>
             <input type="number"
             value=""
@@ -73,43 +73,37 @@
             id="codigo"
             required><br>
 
-            <!-- codigo -->
-            <label for="nombre">NOMBRE:</label>
+            <!-- Nombre del Cultivo -->
+            <label for="nombre">NOMBRE DEL CULTIVO:</label>
             <input type="text"
             value=""
-            placeholder="Ingrese el Nombre del Animal"
+            placeholder="Ingrese el Nombre del Cultivo"
             name="nombre"
             id="nombre"
             required><br>
 
-            <!-- codigo -->
-            <label for="raza">RAZA:</label>
+
+            <!-- Tipo de Cultivo -->
+            <label for="tipo_cultivo">TIPO DE CULTIVO:</label>
             <input type="text"
             value=""
-            placeholder="Ingrese el tipo de Raza del animal"
-            name="raza"
-            id="raza"
+            placeholder="Ingrese el Tipo de Cultivo"
+            name="tipo_cultivo"
+            id="tipo_cultivo"
             required><br>
 
-            <!-- codigo -->
-            <label for="tipo_animal">TIPO DE ANIMAL:</label>
-            <input type="text"
-            value=""
-            placeholder="Ingrese el Tipo de Animal"
-            name="tipo_animal"
-            id="tipo_animal"
-            required><br>
-
-            <!-- codigo -->
-            <label for="fecha_nacimiento">FECHA DE NACIMIENTO:</label>
+            <!-- Fecha de nacimiento -->
+            <label for="fecha_nacimiento">FECHA DE SIEMBRA:</label>
             <input type="datetime-local"
             value=""
-            placeholder="Ingrese la fecha de nacimiento"
             name="fecha_nacimiento"
             id="fecha_nacimiento"
             required><br>
 
+            <!-- boton Guardar -->
             <input type="button" value="GUARDAR" class="boton">
+
+            <!-- boton Borrar -->
             <input type="button" value="BORRAR" class="boton">
         </form>
 
