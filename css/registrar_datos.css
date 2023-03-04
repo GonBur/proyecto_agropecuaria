@@ -59,8 +59,9 @@ header figure img{
 /* el subtitulo dentro de la sesion - section >h2 */
 .seccion_nombre_menu h2{
     font-size: 2.3rem;
-    text-align: center;
+    text-align:end;
     margin: auto;
+    width: 90%;
     color: #4AA49C;
     font-family: 'Imprima';
     text-shadow: .1rem 0rem  black;
@@ -322,9 +323,10 @@ footer p{
     }
     /* el subtitulo dentro de la sesion - section >h2 */
     .seccion_nombre_menu h2{
+        text-align: center;
         top: 13vh;
         position: absolute;
-        left: 40%;
+        left: 4%;
         font-size: 5rem;
     }
     
@@ -372,7 +374,8 @@ footer p{
     }
 
     /* enlaces para el registro tanto de animales como del cultivo  */
-    main .botones_animales_cultivo{width:40%;
+    main .botones_animales_cultivo{
+    width:40%;
     margin: 0 auto;
     padding: 1% 0;
     }

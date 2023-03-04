@@ -27,7 +27,7 @@
     </header>
 
     <!-- SECCION NOMBRE Y MENU DE NAVEGACION -->
-    <section>
+    <section class="seccion_nombre_menu">
 
         <!-- nombre - h2 -->
         <h2>ACTUALIZAR DATOS</h2>
@@ -43,23 +43,79 @@
             <ul>
                 <li><a href="inicio_sistema.html">INICIO</a></li>
                 <li><a href="registrar_datos.html">REGISTRAR DATOS</a></li>
+                <li><a href="actualizar_datos.html">ACTUALIZAR DATOS</a></li>
                 <li><a href="atencion.html">ATENCIÓN</a></li>
                 <li><a href="consulta.html">CONSULTA</a></li>
 
-                <li><a href="consultar_datos.html">CONSULTAR DATOS</a></li>
-                <li><a href="actualizar_datos.html">ACTUALIZAR DATOS</a></li>
+                <li><a href="consultar_datos.html">CONSULTAR DATOS</a></li>>
             </ul>
         </nav>
     </section>
 
     <!-- CONTENIDO PRINCIPAL -MAIN -->
     <main>
-        
+        <!-- enlaces para el registro tanto de animales como del cultivo -->
+        <section class="botones_animales_cultivo">
+
+               <li> <a href="actualizar_datos.html" class="estas_aqui">Animales</a></li>
+
+                <li><a href="actualizar_datos_cultivo.html" class="no_estas_aqui">Cultivo</a></li>
+        </section>
+
+        <!-- formulario para el registro de datos a ingresar -->
+        <form action="">
+            <!-- codigo -->
+            <label for="codigo">CODIGO DEL ANIMAL:</label>
+            <input type="number"
+            value=""
+            placeholder="Ingrese el Codigo del Animal"
+            name="codigo"
+            id="codigo"
+            required><br>
+
+            <!-- NOMBRE -->
+            <label for="nombre">NOMBRE:</label>
+            <input type="text"
+            value=""
+            placeholder="Ingrese el Nombre del Animal"
+            name="nombre"
+            id="nombre"
+            required><br>
+
+            <!-- RAZA-->
+            <label for="raza">RAZA:</label>
+            <input type="text"
+            value=""
+            placeholder="Ingrese el tipo de Raza del animal"
+            name="raza"
+            id="raza"
+            required><br>
+
+            <!-- codigo -->
+            <label for="tipo_animal">TIPO DE ANIMAL:</label>
+            <input type="text"
+            value=""
+            placeholder="Ingrese el Tipo de Animal"
+            name="tipo_animal"
+            id="tipo_animal"
+            required><br>
+
+            <!-- codigo -->
+            <label for="fecha_nacimiento">FECHA DE NACIMIENTO:</label>
+            <input type="datetime-local"
+            value=""
+            placeholder="Ingrese la fecha de nacimiento"
+            name="fecha_nacimiento"
+            id="fecha_nacimiento"
+            required><br>
+
+            <input type="button" value="GUARDAR" class="boton">
+            <input type="button" value="BORRAR" class="boton">
+        </form>
 
 
     </main>
 
-    
     <!-- PIE DE PAGINA - FOOTER -->
     <footer>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut libero quisquam magni doloribus a possimus voluptates assumenda blanditiis vitae ratione hic similique, consequuntur, unde sapiente, </p>

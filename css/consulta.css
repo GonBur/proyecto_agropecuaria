@@ -50,24 +50,25 @@ header figure img{
     margin: 2.5% 0;
 }
 /* SECCION NOMBRE Y MENU DE NAVEGACION - SECTION */
-section{
+.seccion_nombre_menu{
     height: 10vh;
     display: grid;
-    grid-template-columns: 85% 15%;
+    grid-template-columns: 80% 20%;
     position: relative;
 }
 /* el subtitulo dentro de la sesion - section >h2 */
-section h2{
+.seccion_nombre_menu h2{
     font-size: 2.3rem;
-    text-align: center;
+    text-align:end;
     margin: auto;
+    width: 80%;
     color: #4AA49C;
     font-family: 'Imprima';
     text-shadow: .1rem 0rem  black;
 }
 
 /* boton dentro de la sesion - section >boton */
-section button {
+.seccion_nombre_menu button {
     text-align: start;
     border: none;
     background-color: transparent;
@@ -118,8 +119,74 @@ nav ul li a:hover{
 main{
     height: 70vh;
 }
+/* enlaces para el registro tanto de animales como del cultivo  */
+main .botones_animales_cultivo li{
+    list-style: none;
+    display: inline;
+    margin: 2% calc(100% - 98%);
+}
+main .botones_animales_cultivo a{
+    width: 45%;
+    display: inline-block;
+    font-size: 2rem;
+    text-decoration: none;
+    padding: 1% 5%;
+    
+    text-align: center;
+    border-radius: .7rem;
+    border: solid black;
+ }
+
+ /* boton indicando en que esta en la session de animales */
+.estas_aqui{
+    background-color: #D9D9D9;
+    color: #0048B4;
+}
+.no_estas_aqui{
+    color: black;
+}
+main .botones_animales_cultivo a:hover{
+    color: #2D293C;
+    background-color: #DDFFEE;
+    transition: all .7s;
+}
 
 
+
+/* formulario */
+main form{
+    padding: 2%;
+    height: 55vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+main form input{
+    font-size: 1.2rem;
+    border-radius: .7rem;
+    text-align:center;
+    height: 6vh;
+    width: 58%;
+    margin: 2.5% auto;
+}
+main form label{
+    width: 34%;
+    font-size: 1.4rem;
+    margin-top: 2%;
+    margin-left: 4%;
+}
+
+main form .boton{
+    display: flexbox;
+    width: 35%;
+    height: 7vh;
+    font-size: 1.4rem;
+    background-color: #4AA49C;
+    color: white;
+}
+main form .boton:hover{
+    background-color: #2D293C;
+    
+}
 
 /* PIE DE PAGINA - FOOTER */
 footer{
@@ -154,11 +221,11 @@ footer p{
     }
 
     /* SECCION NOMBRE Y MENU DE NAVEGACION - SECTION */
-    section{
+    .seccion_nombre_menu{
         height: 10vh;
     }
     /* el subtitulo dentro de la sesion - section >h2 */
-    section h2{
+    .seccion_nombre_menu h2{
         font-size: 4.5rem;
     }
     
@@ -171,10 +238,55 @@ footer p{
         font-size: 3.5rem;
     }
     
+
     /* CONTENIDO PRINCIPAL - MAIN */
     main{
         height: 68vh;
+        display: grid;
+        grid-template-rows: 15vh 40vh 13vh;
     }
+
+    /* enlaces para el registro tanto de animales como del cultivo  */
+    main .botones_animales_cultivo{
+    padding: 2.5% 0;
+    }
+
+    main .botones_animales_cultivo li{
+    margin: 0 calc(100% - 96%);
+    }
+
+    main .botones_animales_cultivo a{
+    width: 40%;
+    font-size: 4rem;
+    height: 12vh;
+    padding:1% 0;
+    }
+
+
+
+    /* formulario */
+    main form{
+        overflow-y: hidden;
+    }
+
+    main form input{
+    margin: 1% auto;
+    width: 55%;
+    font-size: 2.5rem;
+    }
+    main form label{
+    width: 40%;
+    font-size: 2.5rem;
+    margin-top: 4%;
+    }
+
+    main form .boton{
+    height: 7vh;
+    width: 30%;
+    font-size: 2.5rem;
+    }
+
+
     
     /* PIE DE PAGINA - FOOTER */
     footer{
@@ -211,19 +323,20 @@ footer p{
     }
 
     /* SECCION NOMBRE Y MENU DE NAVEGACION - SECTION */
-    section{
+    .seccion_nombre_menu{
         height: 10vh;
     }
     /* el subtitulo dentro de la sesion - section >h2 */
-    section h2{
+    .seccion_nombre_menu h2{
+        text-align: center;
         top: 13vh;
         position: absolute;
-        left: 40%;
+        left: 10%;
         font-size: 5rem;
     }
     
     /* boton dentro de la sesion - section >boton */
-    section button {
+    .seccion_nombre_menu button {
     display: none; 
     }
 
@@ -259,15 +372,68 @@ footer p{
     
     /* CONTENIDO PRINCIPAL - MAIN */
     main{
+        margin-top: 10vh;
+        height: 60vh;
+        display: grid;
+        grid-template-rows: 10vh 50vh ;
+    }
 
+    /* enlaces para el registro tanto de animales como del cultivo  */
+    main .botones_animales_cultivo{
+    width:100%;
+    margin: 0 auto;
+    padding: 1% 0;
+    }
+
+    main .botones_animales_cultivo li{
+    width:100%;
+    margin:  0 calc(100% - 88%);
+    }
+
+    main .botones_animales_cultivo a{
+    width: 25%;
+    font-size: 4rem;
+    height: 6vh;
+    padding: 0;
+    }
+
+    /* formulario */
+    main form{
+        overflow-y: hidden;
+        width: 60%;
+        padding-top: 1%;
+        margin: 0 calc(100% - 75%);
+    }
+
+    main form input{padding: 0;
+    margin: 0;
+    width: 40%;
+    height: 5vh;
+    font-size: 2.5rem;
+    }
+    main form label{padding: 0;
+    height: 5vh;
+    width: 40%;
+    font-size: 3rem;
+    margin: 0%;
+    }
+
+    main form .boton{
+    margin:0 calc(100% - 90%);
+    height: 5vh;
+    width: 20%;
+    font-size: 3rem;
     }
 
     
     /* PIE DE PAGINA - FOOTER */
+    footer{
+        height: 7vh;
+    }
     /* el parrafo dentro del pie de pagina - footer >p */
     footer p{
     text-align: center;
-    margin: 0;
+    margin: 1%;
     font-size: 2rem;
     }
 }

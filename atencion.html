@@ -27,7 +27,7 @@
     </header>
 
     <!-- SECCION NOMBRE Y MENU DE NAVEGACION -->
-    <section>
+    <section class="seccion_nombre_menu">
 
         <!-- nombre - h2 -->
         <h2>ATENCIÓN</h2>
@@ -43,18 +43,107 @@
             <ul>
                 <li><a href="inicio_sistema.html">INICIO</a></li>
                 <li><a href="registrar_datos.html">REGISTRAR DATOS</a></li>
+                <li><a href="actualizar_datos.html">ACTUALIZAR DATOS</a></li>
                 <li><a href="atencion.html">ATENCIÓN</a></li>
                 <li><a href="consulta.html">CONSULTA</a></li>
 
-                <li><a href="consultar_datos.html">CONSULTAR DATOS</a></li>
-                <li><a href="actualizar_datos.html">ACTUALIZAR DATOS</a></li>
+                <li><a href="consultar_datos.html">CONSULTAR DATOS</a></li>>
             </ul>
         </nav>
     </section>
 
     <!-- CONTENIDO PRINCIPAL -MAIN -->
     <main>
-        
+        <!-- enlaces para el registro tanto de animales como del cultivo -->
+        <section class="botones_animales_cultivo">
+
+               <li> <a href="atencion.html" class="estas_aqui">Animales</a></li>
+
+                <li><a href="atencion_cultivo.html" class="no_estas_aqui">Cultivo</a></li>
+        </section>
+
+        <!-- formulario para el registro de datos a ingresar -->
+        <form action="">
+
+            <!-- seccion 01 alimentacion -->
+            <section class="seccion1">
+            <h3>ALIMENTACIÓN:</h3>
+            <!-- codigo -->
+            <p><label for="codigo">CODIGO DEL ANIMAL:</label>
+            <input type="number"
+            value=""
+            placeholder="Ingrese el Codigo del Animal"
+            name="codigo"
+            id="codigo"
+            required></p>
+
+            <!-- nombre -->
+            <p><label for="nombre">NOMBRE:</label>
+            <input type="text"
+            value=""
+            placeholder="Ingrese el Nombre del Animal"
+            name="nombre"
+            id="nombre"
+            required></p>
+
+            <!-- fecha -->
+            <p><label for="fecha_nacimiento">FECHA:</label>
+            <input type="datetime-local"
+            value=""
+            placeholder="Ingrese la fecha de nacimiento"
+            name="fecha_nacimiento"
+            id="fecha_nacimiento"
+            required></p>
+
+            <!-- cantidad  -->
+            <p><label for="fecha_nacimiento">CANTIDAD:</label>
+            <input type="text"
+            value=""
+            placeholder="Cantidad de Alimento"
+            name="fecha_nacimiento"
+            id="fecha_nacimiento"
+            required></p>
+            </section>
+
+            <!-- seccion 02 -->
+            <section class="seccion2">
+            <!-- sanidad -->
+            <h3>SANIDAD</h3>
+
+            <!-- codigo -->
+            <p><label for="codigo">CODIGO DEL ANIMAL:</label>
+            <input type="number"
+            value=""
+            placeholder="Ingrese el Codigo del Animal"
+            name="codigo"
+            id="codigo"
+            required></p>
+
+            <!-- fecha -->
+            <p><label for="fecha_nacimiento">FECHA:</label>
+            <input type="datetime-local"
+            value=""
+            placeholder="Ingrese la fecha de nacimiento"
+            name="fecha_nacimiento"
+            id="fecha_nacimiento"
+            required></p>
+
+            <!-- tipo de atencion -->
+            <p><label for="fecha_nacimiento">TIPO DE ATENCIÓN:</label>
+            <input type="text"
+            value=""
+            placeholder="Ingrese el tipo de atención"
+            name="fecha_nacimiento"
+            id="fecha_nacimiento"
+            required></p>
+            </section>
+
+            <!-- seccion 03 botones -->
+            <section class="seccion3">
+            <input type="submit" value="GUARDAR" class="boton">
+            <input type="reset" value="BORRAR"  class="boton">
+            </section>
+        </form>
 
 
     </main>

@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Consulta</title>
-    <link rel="stylesheet" href="css/consulta.css">
+    <link rel="stylesheet" href="css/consulta_cultivo.css">
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
 </head>
@@ -57,9 +57,9 @@
         <!-- enlaces para el registro tanto de animales como del cultivo -->
         <section class="botones_animales_cultivo">
 
-               <li> <a href="consulta.html" class="estas_aqui" >Alimentacion de Animales</a></li>
+               <li> <a href="consulta.html" class="no_estas_aqui" >Alimentacion de Animales</a></li>
 
-                <li><a href="consulta_cultivo.html" class="no_estas_aqui">Producción de Cultivo</a></li>
+                <li><a href="consulta_cultivo.html" class="estas_aqui">Producción de Cultivo</a></li>
         </section>
 
 
@@ -68,7 +68,7 @@
             
 
             <!-- codigo -->
-            <label for="codigo">CODIGO DEL ANIMAL:</label>
+            <label for="codigo">CODIGO DEL CULTIVO:</label>
             <input type="number"
             value=""
             placeholder="Ingrese el Codigo del Animal"
@@ -80,19 +80,37 @@
             <label for="nombre">NOMBRE:</label>
             <input type="text"
             value=""
-            placeholder="Ingrese el Nombre del Animal"
+            placeholder="Ingrese el Nombre del Cultivo"
             name="nombre"
             id="nombre"
             required><br>
         
 
             <!-- fecha  -->
-            <label for="fecha_siembra">FECHA:</label>
+            <label for="fecha">FECHA:</label>
             <input type="datetime-local"
             value=""
             placeholder="Ingrese la Fecha"
             name="fecha"
-            id="fecha_siembra"
+            id="fecha"
+            required><br>
+
+            <!-- observación -->
+            <label for="observacion">OBSERVACIÓN:</label>
+            <input type="text"
+            value=""
+            placeholder="Ingrese la Observación"
+            name="observacion"
+            id="observacion"
+            required><br>
+
+            <!-- cantidad cultivo sembrado -->
+            <label for="cantidad_siembra">CANTIDAD DE SIEMBRA:</label>
+            <input type="text"
+            value=""
+            placeholder="Ingrese la Cantidad de Siembra"
+            name="cantidad_siembra"
+            id="cantidad_siembra"
             required><br>
 
             <input type="submit" value="GUARDAR" class="boton">
